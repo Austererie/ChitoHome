@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+
+   <style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   </style>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="nav_container" id="nav-container">
+    
+      <a href="../HOME PAGE/index.html">
+        <img src="Images/Logo.png" class="logo">
+      </a>
+      
+      <nav class="navbar">
+
+        <ul class="sidebar">
+          <li onclick=hideSidebar() class="navlist" id="close-button"><a href="#"><img src="Images/close-large-line.png"</a></li>
+          <li class="navlist"><a href="../HOME PAGE/index.html">Home</a></li>
+          <li class="navlist drops">
+            <a href="../CAFE PAGE2/index.html">Cafe
+              <span class="dropdown_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+              </svg></span>
+            </a>
+              
+            <ul class="dropdown">
+              
+              <li><a href="#text_title">Coffe Shop</a></li>
+              <li><a href="#menutitle">Menu</a></li>
+            </ul>
+          </li>
+          <li class="navlist"><a href="#">Blog</a></li>
+          <li class="navlist drops">
+            <a href="../ABOUT US/index.html">About Us
+              <span class="dropdown_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+              </svg></span>
+            </a>
+            
+            <ul class="dropdown">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Manufacturing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+        <ul class="navlists">
+          <li class="navlist hideOnMobile"><a href="../HOME PAGE/index.html">Home</a></li>
+          <li class="navlist drops hideOnMobile">
+            <a href="../CAFE PAGE2/index.html">Cafe
+              <span class="dropdown_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+              </svg></span>
+            </a>
+              
+            <ul class="dropdown">
+              
+              <li><a href="#text_title">Coffe Shop</a></li>
+              <li><a href="#menutitle">Menu</a></li>
+            </ul>
+          </li>
+          <li class="navlist hideOnMobile"><a href="#">Blog</a></li>
+          <li class="navlist drops hideOnMobile">
+            <a href="../ABOUT US/index.html">About Us
+              <span class="dropdown_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+              </svg></span>
+            </a>
+            
+            <ul class="dropdown">
+              <li><a href="../ABOUT US/index.html#history">History</a></li>
+              <li><a href="../ABOUT US/index.html#manufacturing">Manufacturing</a></li>
+            </ul>
+          </li>
+          <li class ="menu-button" onclick=showSidebar()><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg=="/></a></li>
+        </ul>
+       
+       
+
+      </nav>
+      
+
+    </div>
+</header>
+  
+  <main>
+    <section class="section1">
+      <div class="container">
+        
+          <h1 class ="kaltetu" id="ka">ካልጠጡ</h1>
+          <img src="Images/Cupbean3.png" id="cupbean">
+          <h1 class= "kaltetu" id="ay">አይንዱ!</h1>
+        
+    </section>
+
+    <section class="section2">
+     <div class="container2">
+      <div class="text">
+        <h1 id="text_title">Coffee Shop</h1>
+        <p>Located at the heart of 4Kilo, our coffee shop elegantly blends traditional Ethiopian aesthetic with modern intererior design. Wether you are looking for a place to enjoy with your family or a simple cozy place to have a cup of coffee, Chito Coffee shop is the right place!</p>
+
+      </div>
+      <div class="store">
+        <img src="Images/location.jpg"  id="store-image">
+      </div>
+    </div>
+
+    </section>
+
+    <section class="section3"> 
+      <h1 id="gallery-title">. Gallery .</h1>
+      <div class="gallery">
+        <img src="Images/doodle1.jpg" class="gallery-image">
+        <img src="Images/perspective.jpg" class="gallery-image">
+        <img src="Images/kaltetu_main.jpg" class="gallery-image">
+        <img src="Images/corner.jpg" class="gallery-image">
+        <img src="Images/art1.jpg" class="gallery-image">
+        <img src="Images/purple.jpg" class="gallery-image">
+        <img src="Images/kaltetu2.jpg" class="gallery-image">
+        <img src="Images/art2.jpg" class="gallery-image">
+        <img src="Images/Baklavah.jpg" class="gallery-image">
+        <img src="Images/doodle2.jpg" class="gallery-image">
+          
+        
+      </div>
+     
+
+    </section>
+
+    <section class="section4">
+      <!--
+      <h1 id="menu-text">Menu</h1>
+      <div class="menu-items">
+        <div class="menu-top">
+        <div class="dessert-menu">
+          
+          <div class="dessert-text">
+            <h2>Dessert Menu</h2>
+            <p>Baklava ....... 80</p>
+            <p>English Cake... 70</p>
+            <p>Cream Cake .... 80</p>
+          </div>
+        </div>
+
+       
+
+        <div class="ice-menu">
+          <h2>Ice Base</h2>
+          <p>Iced Tea ............... 60</p>
+          <p>Iced Coffee ............ 70</p>
+          <p>Caramel, Chocolate, or Strawberry Ice coffee with milk ....... 150</p>
+        </div>
+
+      
+        <div class="tea">
+          <h2>Tea Base</h2>
+          <p>Tea ............... 40</p>
+          <p>Special Tea/Flu Tea ...... 110</p>
+          <p>Green Tea......... 130</p>
+          <p>Macha Tea ......... 150</p>
+        </div>
+      </div>
+
+      <div class="menu-bottom">
+
+        <div class="coffee-menu">
+          <h2>Coffee Base</h2>
+          <p>Coffee or Gahawa ....... 50</p>
+          <p>Macchiato, Gahawa Macchiato .... 90</p>
+          <p>Cappuccino ........ 150 </p>
+          <p>Golden Macchiato ..... 110</p>
+          <p>Americano ............. 70</p>
+          <p>Jebena Coffee ......... 40</p>
+          <p>Caramel, Chocolate or Strawberry..... 110</p>
+      </div>
+
+
+        <div class="other">
+          <h2>Other</h2>
+          <p>Chito Coffee (1/4 Kg)....... 210</p>
+          <p>Chito Coffee (1/2 Kg) ....... 420</p>
+          <p>Sample Coffee (50 grams) ...... 40</p>
+        </div>
+
+        <div class="milk">
+          <h2>Milk Base</h2>
+          <p>Hot Chocolate/Caramel/Strawberry ..... 150</p>
+        </div>
+      </div>
+       
+      <img src="Images/Baklavah.jpg" id="baklava">
+
+        
+      </div>
+           -->
+           
+           <div class="menu-title">
+            <h1 id="menutitle">Menu</h1>
+           </div>
+
+           <div class="menu-img">
+            <img src="Images/menu1.jpg" class="menu">
+            <img src="Images/menu2.jpg" class="menu">
+            <img src="Images/menu3.jpg" class="menu">
+            <img src="Images/menu4.jpg" class="menu">
+           </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="contact">
+      <div class="address">
+      <h3> Visit Us:</h3>
+      <p>Ambassador Mall, 3rd floor</p>
+      <p>4Kilo, Addis Ababa</p>
+      <p>+25127084540 </p>
+      </div>
+    <div class="allrights">
+      <p>©chitocoffee.com All rights reserved</p>
+    </div>
+    </div>
+
+  </footer>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  
+</body>
+</html>

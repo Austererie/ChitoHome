@@ -1,0 +1,1473 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+html{
+  background-color: #504f4d;
+}
+
+body{
+  background-image: url('Images/kaltetu_main.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  background-position: center top;
+}
+
+
+
+.nav_container{
+  background:transparent;
+  display: flex;
+  height: 20vh;
+  font-size: 14px;
+  z-index: 1;
+  
+
+}
+
+.logo{
+  position: relative;
+  top: 28px;
+  left: 80px;
+  width: 140px;
+  cursor: pointer;
+  filter: drop-shadow(-8px 5px 7px #000000);
+}
+
+.navbar{
+  position: relative;
+  bottom: 15px;
+  left: 180px;
+  background: transparent;
+  margin: auto;
+  z-index: 1;
+
+  
+}
+
+
+.navlists{
+  display: flex;
+  gap: 4rem;
+  font-size: 19px;
+  font-family: 'Oswald';
+  
+  
+  
+  
+
+}
+
+.navlists a{
+    border-bottom: 2px solid transparent;
+    transition: border .5s ease;  
+    z-index: 1;
+    color: white;
+    font-weight: 200;
+    text-shadow: -5px 0px 4px rgba(0,0,0,0.36);
+
+  
+}
+
+
+.navlists a:hover{
+  border-bottom: 2px solid #febf76;
+}
+
+.navlist, .dropdown li{
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.dropdown{
+  position: absolute;
+  padding: 0.5rem 0;
+  margin: 0.5rem -0.5rem;
+  background-color:rgb(222, 184, 135, 0.8);
+  box-shadow: 0 4px 12px rbga(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: lighter;
+ 
+  display: none;
+}
+
+
+
+
+.drops:hover .dropdown{
+  display: block;
+
+}
+
+.drops a{
+  display:flex;
+  align-items: center;
+}
+
+.drops .dropdown_icon{
+  font-size: 20px;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+
+}
+
+.drops:hover .dropdown_icon{
+  transform: rotate(180deg);
+
+}
+
+.dropdown li:hover{
+  background-color: rgba(121, 62, 22, 0.5);
+  
+ /* border-radius: 0.5rem; */
+}
+
+.dropdown li a:hover{
+  border-bottom: 2px solid #e4a155;
+
+}
+
+
+header{
+  height: 110px;
+  width: 100%;
+  
+}
+
+footer{
+  background-color: #291601;
+  height: 150px;
+  width: 100%;
+  
+}
+
+.wave2 svg{
+  position: absolute;
+  top: 1173px;
+  left: 0;
+  
+}
+
+.nav_container{
+  
+  background:transparent;
+  display: flex;
+  height: 20vh;
+  font-size: 14px;
+  z-index: 1;
+  
+  
+  
+
+}
+
+
+
+.logo{
+  position: relative;
+  top: 28px;
+  left: 80px;
+  width: 140px;
+  cursor: pointer;
+  
+}
+
+.navbar{
+  position: relative;
+  bottom: 15px;
+  left: 180px;
+  background: transparent;
+  margin: auto;
+  z-index: 1;
+
+  
+}
+
+
+.navlists{
+  display: flex;
+  gap: 4rem;
+  font-size: 19px;
+  font-family: 'Oswald';
+  
+  
+  
+  
+
+}
+
+.navlists a{
+    border-bottom: 2px solid transparent;
+    transition: border .5s ease;  
+    z-index: 1;
+    color: white;
+    font-weight: 200;
+
+  
+}
+
+
+.navlists a:hover{
+  border-bottom: 2px solid #F0E68C;
+}
+
+.navlist, .dropdown li{
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  
+}
+
+.dropdown{
+  position: absolute;
+  padding: 0.5rem 0;
+  margin: 0.5rem -0.5rem;
+  background-color:rgb(222, 184, 135, 0.8);
+  box-shadow: 0 4px 12px rbga(0, 0, 0, 0.1);
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: lighter;
+ 
+  display: none;
+}
+
+
+
+
+.drops:hover .dropdown{
+  display: block;
+
+}
+
+.drops a{
+  display:flex;
+  align-items: center;
+}
+
+.drops .dropdown_icon{
+  font-size: 20px;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+
+}
+
+.drops:hover .dropdown_icon{
+  transform: rotate(180deg);
+
+}
+
+.dropdown li:hover{
+  background-color: rgba(121, 62, 22, 0.5);
+  
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999px;
+  background-color:#f69a3f95;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; 
+  font-size: 19px;
+  font-family: 'Oswald';
+  
+
+}
+
+.sidebar .navlist{
+  width: 100%;
+  height: 100px;
+ 
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.sidebar li:hover{
+  background-color:#944d025e;
+  
+}
+
+#close-button:hover{
+  background: transparent;
+}
+
+
+
+.sidebar a{
+  width: 100%;
+  color: white;
+  font-weight: 200;
+}
+
+
+
+.menu-button{
+  display:none;
+
+  
+
+}
+
+
+.section1{
+  width: 100%;
+  height: 620px;
+  background: transparent;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+
+}
+.kaltetu{
+  font-size: 138px;
+  font-family: 'Noto Serif Ethiopic';
+  color: white;
+  text-shadow: 8px 6px 18px rgba(0, 0, 0, 0.597);
+  
+}
+
+#ka{
+  position: relative;
+  top: 60px;
+  left:20px;
+
+}
+
+#ay{
+  position: relative;
+  top: 60px;
+  right: 360px;
+}
+#cupbean{
+  position: relative;
+  left: 30px;
+  width: 810px;
+  height: auto;
+  filter: drop-shadow(-8px 5px 7px #000000);
+}
+
+
+.section2{
+  background-color:#504f4d;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-around;
+  
+  
+
+}
+
+.text{
+  
+  width: 450px;
+  margin-top: 90px;
+  
+  
+}
+
+.text h1{
+  font-size: 70px;
+  font-family: 'Pacifico';
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  color: #ffc078;
+}
+
+.text p{
+  font-size: 21px;
+  font-family: 'Poppins';
+  
+  text-align: justify;
+  color: white;
+}
+
+
+#store-image{
+  width: 700px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+
+
+.section3{
+  background-color:#ffdfbb;
+
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  padding-bottom: 20px;
+ 
+  
+  
+}
+#gallery-title{
+  position: relative;
+  top: 5px;
+
+  text-align: right;
+  font-size: 80px;
+  font-family: 'Bree Serif';
+  font-weight: 400;
+  
+  background-color:#ae793d7a;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 12px;
+  
+  color: black;
+  
+  
+  
+  
+}
+.gallery-image{
+  width: 280px;
+  height: 300px;
+  border-radius: 3px;
+}
+
+.gallery img:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease-out;
+}
+
+.section4{
+  background-color:#504f4d;
+  
+}
+
+.menu-title{
+  position: relative;
+  left: 600px;
+  
+  background-color:#1d140aa6;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-top:20px;
+
+  border-radius: 5px;
+
+}
+
+.menu-title h1{
+  font-size: 90px;
+  font-family: 'Pacifico';
+  text-align: center;
+  color:#ffd7aa;
+  font-weight: 400;
+}
+.menu-img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+
+}
+
+.menu{
+  width: 550px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+
+
+.contact{
+  position: relative;
+  top: 30px;
+  left: 25px;
+
+}
+.contact h3{
+  color: white;
+  font-family: 'Teko';
+  font-size: 20px;
+}
+
+.contact p{
+  color: white;
+  font-family: 'Teko';
+  font-size: 15px;
+}
+
+.allrights p{
+  position: relative;
+  color: white;
+  left:600px;
+  bottom: 50px;
+  font-family: 'Teko';
+  font-size: 18px;
+}
+
+@media (max-width: 1408px){
+  .kaltetu{
+    font-size: 120px;
+  }
+
+}
+
+@media (max-width: 1300px){
+  .kaltetu{
+    font-size: 115px;
+  }
+}
+
+@media (max-width: 1270px){
+  .kaltetu{
+    font-size: 105px;
+  }
+}
+
+@media (max-width: 1220px){
+  .kaltetu{
+    font-size: 100px;
+  }
+
+  #cupbean{
+    width: 790px;
+  }
+
+  .text {
+    width: 410px;
+  }
+
+  .text h1{
+    font-size: 67px;
+  }
+
+  .text p{
+    font-size: 19px;
+  }
+  
+  #store-image{
+    width: 650px;
+  }
+
+  #gallery-title{
+    font-size: 77px;
+  }
+}
+
+@media (max-width: 1190px){
+  #cupbean{
+    width: 650px;
+  }
+
+  #ay{
+    position: relative;
+    right: 280px;
+  }
+
+  .menu-title{
+    position: relative;
+    left: 390px;
+  }
+
+  .menu-title h1{
+    font-size: 75px;
+  }
+  .menu{
+    width: 450px;
+    
+  }
+}
+
+@media (max-width: 1090px){
+
+  #cupbean{
+    width: 650px;
+  }
+
+  .kaltetu{
+    font-size: 90px;
+  }
+
+  .menu{
+    width: 450px;
+    
+  }
+
+  .menu-title{
+    position: relative;
+    left: 350px;
+  }
+
+  .menu-title h1{
+    font-size: 70px;
+  }
+
+  .text h1{
+    font-size: 60px;
+  }  
+  .text p{
+    font-size: 17px;
+  }  
+  #store-image{
+    width: 530px;
+  }
+  
+  
+}
+
+@media (max-width: 1016px){
+ .kaltetu{
+  font-size: 85px;
+ }
+
+ #cupbean{
+  width: 610px;
+}
+
+.navbar{
+  position: relative;
+  left: 150px;
+}
+
+}
+
+@media (max-width: 965px){
+ 
+   
+  .text{
+    margin-top: 60px;
+  }
+  .text h1{
+    font-size: 55px;
+  }  
+  .text p{
+    font-size: 15px;
+  }  
+  #store-image{
+    width: 480px;
+  }
+}
+
+@media (max-width: 940px){
+  .section1{
+    height: 530px;
+  }
+  .kaltetu{
+    font-size: 78px;
+  }
+
+  #cupbean{
+    width: 570px;
+  }
+
+  #ay{
+    position: relative;
+    right: 240px;
+  }
+
+  .menu{
+    width: 420px;
+    
+  }
+
+  #gallery-title{
+    font-size: 60px;
+
+  }
+
+
+  .gallery-image{
+    width: 200px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 900px){
+  .hideOnMobile{
+    display:none;
+  }
+ 
+  .menu-button{
+    display: block;
+   
+    
+  }
+  .kaltetu{
+    font-size: 74px;
+  }
+
+  #cupbean{
+    width: 520px;
+  }
+  #ay{
+    position: relative;
+    right: 220px;
+  }
+  .text{
+    margin-top: 30px;
+    width: 350px;
+  }
+
+  .text h1{
+    font-size: 55px;
+  }
+
+  .text p{
+    font-size: 14px;
+  }
+
+  #store-image{
+    width: 450px;
+  }
+
+  .menu{
+    width: 400px;
+  }
+}
+
+@media (max-width: 830px){
+ 
+  .kaltetu{
+    font-size: 72px;
+  }
+
+  #cupbean{
+    width: 480px;
+  }
+  #ay{
+    position: relative;
+    right: 200px;
+  }
+  .text{
+    margin-top: 30px;
+    width: 320px;
+  }
+
+  .text h1{
+    font-size: 55px;
+  }
+
+  .text p{
+    font-size: 14px;
+  }
+
+  #store-image{
+    width: 420px;
+  }
+
+  .menu{
+    width: 370px;
+  }
+}
+
+@media (max-width: 790px){
+ 
+  .kaltetu{
+    font-size: 69px;
+  }
+
+  #cupbean{
+    width: 450px;
+  }
+  #ay{
+    position: relative;
+    right: 180px;
+  }
+  .text{
+    margin-top: 10px;
+    width: 320px;
+  }
+
+  .text h1{
+    font-size: 53px;
+  }
+
+  .text p{
+    font-size: 14px;
+  }
+
+  #store-image{
+    width: 400px;
+  }
+  .menu-title{
+    position: relative;
+    left: 250px;
+  }
+  .menu{
+    width: 350px;
+  }
+}
+
+@media (max-width: 765px){
+
+  .section1{
+    height: 480px;
+  }
+  .kaltetu{
+    font-size: 65px;
+  }
+
+  #cupbean{
+    width: 400px;
+  }
+  #ay{
+    position: relative;
+    right: 150px;
+  }
+  .text{
+    margin-top: 10px;
+    width: 310px;
+  }
+
+  .text h1{
+    font-size: 50px;
+  }
+
+  .text p{
+    font-size: 14px;
+  }
+
+  #store-image{
+    width: 380px;
+  }
+  .menu-title{
+    position: relative;
+    left: 220px;
+  }
+  .menu-title h1{
+    font-size: 60px;
+  }
+  .menu{
+    width: 310px;
+  }
+
+}
+
+@media (max-width: 715px){
+  .section1{
+    height: 420px;
+  }
+  .kaltetu{
+    font-size: 62px;
+  }
+
+  #cupbean{
+    width: 350px;
+  }
+  #ay{
+    position: relative;
+    right: 130px;
+  }
+  .text{
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  .text h1{
+    font-size: 47px;
+  }
+
+  .text p{
+    font-size: 13px;
+  }
+
+  #store-image{
+    width: 350px;
+  }
+  .menu-title{
+    position: relative;
+    left: 200px;
+  }
+  .menu-title h1{
+    font-size: 55px;
+  }
+  .menu{
+    width: 300px;
+  }
+}
+
+
+
+@media (max-width: 665px){
+  .section1{
+    height: 380px;
+  }
+  .kaltetu{
+    font-size: 50px;
+  }
+
+  #cupbean{
+    width: 320px;
+  }
+  #ay{
+    position: relative;
+    right: 80px;
+  }
+  .text{
+    margin-top: 10px;
+    width: 250px;
+  }
+
+  .text h1{
+    font-size: 37px;
+  }
+
+  .text p{
+    font-size: 12px;
+  }
+
+  #store-image{
+    width: 310px;
+  }
+
+  .gallery-image{
+    width: 170px;
+    height: 190px;
+  }
+  .menu-title{
+    position: relative;
+    left: 170px;
+  }
+  .menu-title h1{
+    font-size: 49px;
+  }
+  .menu{
+    width: 250px;
+  }
+
+}
+
+@media (max-width: 595px){
+  .sidebar{
+    width: 100%;
+  }
+
+  #close-button{
+    position: relative;
+    left: 410px;
+    top: 30px;
+  }
+  .section1{
+    height: 370px;
+  }
+  .logo{
+    width: 100px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  .container{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .kaltetu{
+    font-size: 65px;
+  }
+
+  #cupbean{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 380px;
+  }
+  #ka{
+    width: 250px;
+  }
+  #ay{
+    position: relative;
+    top: -10px;
+    left: 340px;
+    width: 210px;
+  }
+
+  .text{
+    margin-top: 10px;
+    width: 250px;
+  }
+
+  .text h1{
+    font-size: 35px;
+  }
+
+  .text p{
+    font-size: 10px;
+  }
+
+  #store-image{
+    width: 300px;
+  }
+  .menu-title{
+    position: relative;
+    left: 180px;
+  }
+  .menu-title h1{
+    font-size: 52px;
+  }
+  .menu{
+    width: 250px;
+  }
+  .contact{
+    position: relative;
+    top: 20px;
+    left: 25px;
+  
+  }
+  .contact h3{
+    
+    font-size: 15px;
+  }
+  
+  .contact p{
+    
+    font-size: 13px;
+    
+  }
+  
+  .allrights p{
+    position: relative;
+    left: 150px;
+    font-size: 10px;
+  }
+
+
+}
+
+@media (max-width: 565px){
+  .section1{
+    height: 300px;
+  }
+  .logo{
+    width: 90px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  .container{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .kaltetu{
+    font-size: 55px;
+  }
+
+  #cupbean{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 320px;
+  }
+  #ka{
+    width: 250px;
+  }
+  #ay{
+    position: relative;
+    top: -10px;
+    left: 290px;
+    width: 210px;
+  }
+
+  .text{
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .text h1{
+    font-size: 30px;
+  }
+
+  .text p{
+    font-size: 9px;
+  }
+
+  #store-image{
+    width: 250px;
+  }
+  .menu-title{
+    position: relative;
+    left: 110px;
+  }
+  .menu-title h1{
+    font-size: 52px;
+  }
+  .menu{
+    width: 230px;
+  }
+
+  #gallery-title{
+    font-size: 40px;
+    height: 60px;
+  }
+
+  .gallery-image{
+    width: 140px;
+    height: 160px;
+  }
+
+}
+
+@media (max-width: 500px){
+  .section1{
+    height: 280px;
+  }
+  .logo{
+    width: 70px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  .container{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .kaltetu{
+    font-size: 47px;
+  }
+
+  #cupbean{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 300px;
+  }
+  #ka{
+    width: 220px;
+  }
+  #ay{
+    position: relative;
+    top: -10px;
+    left: 290px;
+    width: 190px;
+  }
+
+  .text{
+    
+    width: 190px;
+  }
+
+  .text h1{
+    font-size: 27px;
+  }
+
+  .text p{
+    font-size: 9px;
+  }
+
+  #store-image{
+    width: 210px;
+  }
+  .menu-title{
+    position: relative;
+    left: 90px;
+  }
+  .menu-title h1{
+    font-size: 48px;
+  }
+  .menu{
+    width: 230px;
+  }
+
+  #gallery-title{
+    font-size: 40px;
+    height: 60px;
+  }
+
+  .gallery-image{
+    width: 140px;
+    height: 160px;
+  }
+
+  #close-button{
+    position: relative;
+    left: 10px;
+    top: 30px;
+  }
+
+}
+
+@media (max-width: 426px){
+  .section1{
+    height: 200px;
+  }
+  .logo{
+    width: 50px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  .container{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .kaltetu{
+    font-size: 35px;
+  }
+
+  #cupbean{
+    position: relative;
+    top: 20px;
+    left: 100px;
+    width: 270px;
+  }
+  #ka{
+    width: 180px;
+  }
+  #ay{
+    position: relative;
+    top: -10px;
+    left: 270px;
+    width: 120px;
+  }
+
+  .text{
+    
+    width: 160px;
+  }
+
+  .text h1{
+    font-size: 24px;
+  }
+
+  .text p{
+    font-size: 8px;
+  }
+
+  #store-image{
+    width: 210px;
+  }
+  .menu-title{
+    position: relative;
+    left: 90px;
+  }
+  .menu-title h1{
+    font-size: 48px;
+  }
+  .menu{
+    width: 230px;
+  }
+
+  #gallery-title{
+    font-size: 40px;
+    height: 60px;
+  }
+
+  .gallery-image{
+    width: 125px;
+    height: 145px;
+  }
+
+}
+
+@media (max-width: 390px){
+  .menu-button{
+    position: relative;
+    right: 40px;
+  }
+}
+
+@media (max-width: 376px){
+  .section1{
+    height: 180px;
+  }
+  .logo{
+    width: 70px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  .container{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .kaltetu{
+    font-size: 38px;
+  }
+
+  #cupbean{
+    position: relative;
+    top: 40px;
+    left: 100px;
+    width: 240px;
+  }
+  #ka{
+    width: 170px;
+  }
+  #ay{
+    position: relative;
+    top: -10px;
+    left: 210px;
+    width: 120px;
+  }
+
+  .text{
+    
+    width: 150px;
+  }
+
+  .text h1{
+    font-size: 20px;
+  }
+
+  .text p{
+    font-size: 7px;
+  }
+
+  #store-image{
+    width: 180px;
+  }
+  .menu-img{
+    display:flex;
+   
+    gap: 5px 5px;
+  
+  }
+  .menu-title{
+    position: relative;
+    left: 50px;
+  }
+  .menu-title h1{
+    font-size: 30px;
+  }
+  .menu{
+    width: 150px;
+  }
+
+  #gallery-title{
+    font-size: 35px;
+    height: 60px;
+  }
+
+  .gallery-image{
+    width: 105px;
+    height: 125px;
+  }
+
+}
+
+@media (max-width: 321px){
+  .section1{
+    height: 120px;
+  }
+  .logo{
+    width: 50px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+  }
+  .container{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  .kaltetu{
+    font-size: 32px;
+  }
+
+  #cupbean{
+    position: relative;
+    top: 40px;
+    left: 100px;
+    width: 150px;
+  }
+  #ka{
+    width: 180px;
+  }
+  #ay{
+    position: relative;
+    top: 10px;
+    left: 180px;
+    width: 100px;
+  }
+
+  .text{
+    position: relative;
+    bottom: 20px;
+    width: 150px;
+  }
+
+  .text h1{
+    font-size: 21px;
+  }
+
+  .text p{
+    font-size: 7px;
+  }
+
+  #store-image{
+    width: 130px;
+  }
+
+  .menu-img{
+    display:flex;
+   
+    gap: 5px 5px;
+  
+  }
+  
+  .menu-title{
+    position: relative;
+    left: 100px;
+    width: 110px;
+  }
+  .menu-title h1{
+    font-size: 30px;
+  }
+  .menu{
+    width: 140px;
+
+  }
+
+  #gallery-title{
+    font-size: 30px;
+    height: 60px;
+  }
+
+  .gallery-image{
+    width: 95px;
+    height: 115px;
+  }
+  
+  
+ 
+}
